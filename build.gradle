@@ -8,7 +8,8 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = "Benchmark"
+
+mainClassName = "se320.Benchmark"
 
 dependencies {
 }
