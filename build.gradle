@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "Benchmark"
+
+dependencies {
+}
+
+compileTestJava {
+	options.compilerArgs += '-parameters'
+	options.encoding = 'UTF-8'
+}
+
+
