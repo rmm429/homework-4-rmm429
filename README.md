@@ -17,7 +17,7 @@ Attached to this assignment, you'll find ```RedBlackBST.java``` (the red-black t
 You can execute that main method via ```./gradlew run```
 
 ### Submission
-Please answer the following. Questions 1-7 and parts of question 8 should be in a text document (e.g., PDF), while some parts of question 8 require writing a few lines of code (for which you should submit the whole directory structure as in prior homeworks). Please remember to submit BOTH the code and written responses (save your written responses in a file in the directory structure for the code!)
+Please answer the following. All questions should be in a text document (e.g., PDF).
 
 1. A short (one paragraph) explanation of why the benchmark harness is structured as it is.  Why is there an initial run that isn't counted in the min/max/average?  Why are we measuring multiple runs?
 2. Reasonable operational profiles for use of the RedBlackBST in the following use cases.  Each of these profiles, for our purposes, is simply a percentage of insert/delete/lookup operations (3 numbers that sum to 100 in each case).
