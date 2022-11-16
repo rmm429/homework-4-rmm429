@@ -1,6 +1,7 @@
 package se320;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Benchmark {
 
@@ -10,15 +11,19 @@ public class Benchmark {
 
     public static void main(String[] args) {
 
+        // Wait for input (use with VisualVM)
+//        Scanner in = new Scanner(System.in);
+//        in.nextLine();
+
         /*
          * Test Case
          * 10/10/80 insert/delete/lookup
          * 10% put, 10% delete, 80% get
          */
-//        int reads = 80;
-//        int inserts = 10;
-//        int deletes = 10;
-//        System.out.println("---TEST---");
+        int reads = 80;
+        int inserts = 10;
+        int deletes = 10;
+        System.out.println("---TEST---");
 
         /*
          * Logging Data Structure
@@ -48,10 +53,10 @@ public class Benchmark {
          * 10/10/80 insert/delete/lookup
          * 10% put, 10% delete, 80% get
          */
-        int reads = 100;
-        int inserts = 0;
-        int deletes = 0;
-        System.out.println("---READ-ONLY---");
+//        int reads = 100;
+//        int inserts = 0;
+//        int deletes = 0;
+//        System.out.println("---READ-ONLY---");
 
         // one warmup run (1mil ops)
         long warmupStart = System.nanoTime();

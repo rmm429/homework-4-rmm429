@@ -8,8 +8,11 @@ repositories {
     mavenCentral()
 }
 
-
 mainClassName = "se320.Benchmark"
+
+run {
+    standardInput = System.in
+}
 
 dependencies {
 }
@@ -18,5 +21,3 @@ compileTestJava {
 	options.compilerArgs += '-parameters'
 	options.encoding = 'UTF-8'
 }
-
-
