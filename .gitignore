@@ -1,3 +1,4 @@
+### Gradle ###
 .gradle
 /build/
 
@@ -17,3 +18,19 @@ gradle-app.setting
 
 # MacOS generated files
 .DS_Store
+.gradle/7.5.1/checksums/checksums.lock
+.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock
+.gradle/7.5.1/dependencies-accessors/gc.properties
+.gradle/7.5.1/executionHistory/executionHistory.bin
+.gradle/7.5.1/executionHistory/executionHistory.lock
+.gradle/7.5.1/fileChanges/last-build.bin
+.gradle/7.5.1/fileHashes/fileHashes.bin
+.gradle/7.5.1/fileHashes/fileHashes.lock
+.gradle/7.5.1/fileHashes/resourceHashesCache.bin
+.gradle/7.5.1/gc.properties
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/cache.properties
+.gradle/buildOutputCleanup/outputFiles.bin
+.gradle/vcs-1/gc.properties
+build/classes/java/main/se320/Benchmark.class
+build/tmp/compileJava/previous-compilation-data.bin
