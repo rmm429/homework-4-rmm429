@@ -13,44 +13,45 @@ public class Benchmark {
         /*
          * Test Case
          * 10/10/80 insert/delete/lookup
-         * 10% put, 10% remove, 80% get
+         * 10% put, 10% delete, 80% get
          */
-        // opProfile("TEST", 10, 10, 80);
-
-        /*
-         * Logging Data Structure
-         * Mostly records new data, occasional queries and edits (deletions)
-         * 80/10/10 insert/delete/lookup
-         * 80% put, 10% remove, 10% get
-         */
-        opProfile("LOGGING", 80, 10, 10);
-
-        /*
-         * Read-heavy Database
-         * Mostly reads data, occasional updates and deletions
-         * 10/10/80 insert/delete/lookup
-         * 10% put, 10% remove, 80% get
-         */
-        opProfile("READ-HEAVY", 10, 10, 80);
-
-        /*
-         * Read-only Database
-         * Only reads data, no modifications performed
-         * 0/0/100 insert/delete/lookup
-         * 0% put, 0% remove, 100% get
-         */
-        opProfile("READ-ONLY", 0, 0, 100);
-
-    }
-
-    public static void opProfile(String profileTitle, int inserts, int deletes, int reads) {
-
-        System.out.println("---" + profileTitle + "---");
-
-        // 10/10/80 insert/delete/lookup - 10% put, 10% remove, 80% get
 //        int reads = 80;
 //        int inserts = 10;
 //        int deletes = 10;
+//        System.out.println("---TEST---");
+
+        /*
+         * Logging Data Structure
+         * Mostly inserts, occasional lookups and deletes
+         * 80/10/10 insert/delete/lookup
+         * 80% put, 10% delete, 10% get
+         */
+//        int reads = 10;
+//        int inserts = 80;
+//        int deletes = 10;
+//        System.out.println("---LOGGING---");
+
+        /*
+         * Read-heavy Database
+         * Mostly reads, occasional inserts and deletes
+         * 10/10/80 insert/delete/lookup
+         * 10% put, 10% delete, 80% get
+         */
+//        int reads = 80;
+//        int inserts = 10;
+//        int deletes = 10;
+//        System.out.println("---READ-HEAVY---");
+
+        /*
+         * Read-only Database
+         * Only reads, no inserts and deletes
+         * 10/10/80 insert/delete/lookup
+         * 10% put, 10% delete, 80% get
+         */
+        int reads = 100;
+        int inserts = 0;
+        int deletes = 0;
+        System.out.println("---READ-ONLY---");
 
         // one warmup run (1mil ops)
         long warmupStart = System.nanoTime();
